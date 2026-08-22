@@ -90,5 +90,6 @@ export function Writing() {
         </motion.div>
       </div>
     </section>
-
+  )
 }
+
