@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-const contacts = [
-  { label: 'UNITED STATES', type: 'location', link: '#' },
-  { label: 'UNITED KINGDOM', type: 'location', link: '#' },
-]
+
 
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
@@ -53,62 +51,26 @@ export function Contact() {
           </p>
         </motion.div>
 
-        {/* Contact Links */}
-        <div className="space-y-0 max-w-2xl">
-          {contacts.map((contact, index) => (
-            <motion.a
-              key={contact.label}
-              href={contact.link}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex items-center justify-between border-t border-gray-800 py-5 md:py-6 group hover:bg-gray-900/30 transition-colors px-4 -mx-4"
-            >
-              <span className="text-sm text-gray-400 tracking-widest">
-                {contact.label}
-              </span>
-              <span className="text-gray-500 group-hover:text-white transition-colors">
-                ↗
-              </span>
-            </motion.a>
-          ))}
-          <div className="border-t border-gray-800" />
-        </div>
-
-        {/* Direct Contact */}
-        <motion.div
-          {...fadeInUp}
-          className="mt-16 lg:mt-24 pt-12 lg:pt-16 border-t border-gray-800"
-        >
-          <p className="text-sm text-gray-500 mb-6 lg:mb-8 tracking-widest uppercase">
-            Or reach me directly
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-16">
+        {/* CTA to contact page */}
+        <motion.div {...fadeInUp}>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-4 border border-gray-700 px-8 md:px-10 py-4 text-sm tracking-widest uppercase text-white hover:bg-white hover:text-black transition-colors"
+          >
+            Open the contact form
+            <span>↗</span>
+          </Link>
+          <p className="mt-6 text-sm text-gray-500">
+            Or email me at{' '}
             <a
               href="mailto:bruce@banner.photography"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
+              className="text-gray-300 hover:text-white transition-colors underline underline-offset-4"
             >
               bruce@banner.photography
             </a>
-            <a
-              href="https://instagram.com/brucebanner"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://vimeo.com/brucebanner"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg lg:text-xl text-gray-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              Vimeo
-            </a>
-          </div>
+          </p>
         </motion.div>
+
 
         {/* Footer */}
         <motion.footer
