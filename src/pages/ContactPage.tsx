@@ -203,7 +203,7 @@ export default function ContactPage() {
                 </a>
               </div>
 
-              <p className="mt-16 text-xs text-gray-600">New York / London</p>
+              <p className="mt-10 text-xs text-gray-600">New York / London</p>
             </motion.aside>
           </div>
         </section>

@@ -45,14 +45,14 @@ export function Speaking() {
     <section id="speaking" className="section-padding bg-[#0d0d0d]">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">Talks & Lectures</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
         <motion.h2
           {...fadeInUp}
-          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-16 lg:mb-24"
+          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-8 lg:mb-12"
         >
           SPEAKING
         </motion.h2>
@@ -67,7 +67,7 @@ export function Speaking() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="block border-t border-gray-800 py-6 md:py-8 group hover:bg-gray-800/30 transition-colors px-4 -mx-4"
+              className="block border-t border-gray-800 py-5 md:py-6 group hover:bg-gray-800/30 transition-colors px-4 -mx-4"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4">
                 <div>

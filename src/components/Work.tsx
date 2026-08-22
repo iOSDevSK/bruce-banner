@@ -55,14 +55,14 @@ export function Work() {
     <section id="work" className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">Career</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
         <motion.h2
           {...fadeInUp}
-          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-16 lg:mb-24"
+          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-8 lg:mb-12"
         >
           WORK<br />EXPERIENCE
         </motion.h2>
@@ -76,7 +76,7 @@ export function Work() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.8, ease: 'easeOut', delay: index * 0.1 }}
-              className="border-t border-gray-800 py-8 md:py-12 lg:py-16 group"
+              className="border-t border-gray-800 py-6 md:py-8 lg:py-10 group"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
                 {/* Left Column - Title & Company */}

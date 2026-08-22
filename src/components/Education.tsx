@@ -12,22 +12,22 @@ export function Education() {
     <section id="education" className="section-padding bg-[#0d0d0d]">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">Background</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
         <motion.h2
           {...fadeInUp}
-          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-16 lg:mb-24"
+          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-8 lg:mb-12"
         >
           EDUCATION
         </motion.h2>
 
         {/* Education Items */}
-        <div className="space-y-16 lg:space-y-24">
+        <div className="space-y-10 lg:space-y-14">
           {/* MIT */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <motion.div {...fadeInUp}>
               <img
                 src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=1200"
@@ -59,7 +59,7 @@ export function Education() {
           </div>
 
           {/* Parsons */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <motion.div
               {...fadeInUp}
               className="flex items-center lg:order-2"
@@ -94,7 +94,7 @@ export function Education() {
           </div>
 
           {/* ICP */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <motion.div {...fadeInUp}>
               <img
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"

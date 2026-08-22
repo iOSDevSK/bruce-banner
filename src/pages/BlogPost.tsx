@@ -28,7 +28,7 @@ export default function BlogPost() {
       <Navigation />
 
       <main>
-        <article className="section-padding pt-32 md:pt-40">
+        <article className="section-padding pt-24 md:pt-28">
           <div className="max-w-3xl mx-auto">
             <Link
               to="/blog"
@@ -68,7 +68,7 @@ export default function BlogPost() {
               ))}
             </div>
 
-            <div className="mt-20 pt-10 border-t border-gray-800">
+            <div className="mt-14 pt-8 border-t border-gray-800">
               <p className="text-sm text-gray-500 tracking-widest uppercase mb-6">Keep reading</p>
               <div className="space-y-0">
                 {others.map((other) => (

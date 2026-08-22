@@ -12,13 +12,13 @@ export function About() {
     <section id="about" className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Section Label */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">About Bruce</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
         {/* First Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 mb-24 lg:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-14 lg:mb-20">
           <motion.div
             {...fadeInUp}
             className="order-2 lg:order-1"
@@ -50,7 +50,7 @@ export function About() {
         {/* Quote Block */}
         <motion.div
           {...fadeInUp}
-          className="mb-24 lg:mb-32"
+          className="mb-14 lg:mb-20"
         >
           <h2 className="font-display text-[8vw] lg:text-section leading-none tracking-tight text-gray-300">
             "NAMED BY THE<br />
@@ -65,7 +65,7 @@ export function About() {
         </motion.div>
 
         {/* Second Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 mb-24 lg:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-14 lg:mb-20">
           <motion.div
             {...fadeInUp}
             className="flex items-center lg:text-right"
@@ -94,7 +94,7 @@ export function About() {
         </div>
 
         {/* Third Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <motion.div {...fadeInUp}>
             <img
               src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1200"

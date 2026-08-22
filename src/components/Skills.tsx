@@ -23,14 +23,14 @@ export function Skills() {
     <section id="skills" className="section-padding bg-[#0d0d0d]">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">Expertise</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
 
         <motion.h2
           {...fadeInUp}
-          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-12 lg:mb-20"
+          className="font-display text-[10vw] lg:text-section leading-none tracking-tight mb-8 lg:mb-12"
         >
           SKILLS
         </motion.h2>

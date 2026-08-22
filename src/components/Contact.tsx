@@ -15,7 +15,7 @@ export function Contact() {
     <section id="contact" className="section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Section Label */}
-        <motion.div {...fadeInUp} className="mb-16">
+        <motion.div {...fadeInUp} className="mb-8 md:mb-10">
           <span className="text-sm text-gray-500 tracking-widest uppercase">Contact</span>
           <div className="w-6 h-px bg-gray-600 mt-2" />
         </motion.div>
@@ -33,13 +33,13 @@ export function Contact() {
 
         <motion.div
           {...fadeInUp}
-          className="w-full h-px bg-gray-700 mb-12 lg:mb-16"
+          className="w-full h-px bg-gray-700 mb-8 lg:mb-10"
         />
 
         {/* Informal Text */}
         <motion.div
           {...fadeInUp}
-          className="mb-12 lg:mb-16 max-w-2xl"
+          className="mb-8 lg:mb-10 max-w-2xl"
         >
           <h3 className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-tight mb-4">
             I'M NOTORIOUSLY<br />
@@ -75,7 +75,7 @@ export function Contact() {
         {/* Footer */}
         <motion.footer
           {...fadeInUp}
-          className="mt-24 lg:mt-32 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4"
+          className="mt-16 lg:mt-20 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} Bruce Banner Photography. All rights reserved.
