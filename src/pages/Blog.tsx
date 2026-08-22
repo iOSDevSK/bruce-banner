@@ -30,7 +30,7 @@ export default function Blog() {
               >
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="block border-t border-gray-800 py-8 md:py-12 group hover:bg-gray-900/30 transition-colors px-4 -mx-4"
+                  className="block border-t border-gray-800 py-5 md:py-6 group hover:bg-gray-900/30 transition-colors px-4 -mx-4"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
                     <div className="lg:col-span-4 overflow-hidden">
