@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const articles = [
   {
@@ -78,7 +79,17 @@ export function Writing() {
           ))}
           <div className="border-t border-gray-800" />
         </div>
+
+        <motion.div {...fadeInUp} className="mt-12">
+          <Link
+            to="/blog"
+            className="text-sm text-gray-400 hover:text-white transition-colors tracking-widest uppercase underline underline-offset-4"
+          >
+            Read the blog ↗
+          </Link>
+        </motion.div>
       </div>
     </section>
   )
 }
+
