@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ label, title, intro }: PageHeaderProps) {
   return (
-    <header className="section-padding pt-24 md:pt-28">
+    <header className="section-padding pt-24 md:pt-28 pb-6 md:pb-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
